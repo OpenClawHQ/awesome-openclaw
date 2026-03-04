@@ -1,111 +1,201 @@
 # Awesome OpenClaw
 
-A curated list of plugins, connectors, tools, and resources for the OpenClaw and proactive AI ecosystem.
+A curated list of high-quality resources, skills, extensions, and tools for the OpenClaw ecosystem and proactive AI development.
 
-**What is this?** A starting point. If you're building with OpenClaw or exploring proactive AI infrastructure, this list collects the most useful projects and references in one place.
+**What is this?** An editorial guide to the best OpenClaw skills and complementary technologies. While [ClawHub](https://clawhub.com) is the machine-searchable registry where skills are published and discovered, this list highlights curated recommendations, organized by use case, with context on why each project is valuable.
 
-> Contributions welcome. See [Contributing](#contributing) below.
+> Contributions welcome. See [Contributing](#contributing) for submission guidelines.
 
 ---
 
 ## Contents
 
-- [Plugins & Extensions](#plugins--extensions)
-- [Connectors & Adapters](#connectors--adapters)
-- [Developer Tools](#developer-tools)
+- [OpenClaw Ecosystem](#openclaw-ecosystem)
+- [Skills by Category](#skills-by-category)
+  - [Developer Tools](#developer-tools)
+  - [Communication](#communication)
+  - [Productivity](#productivity)
+  - [DevOps & Infrastructure](#devops--infrastructure)
+  - [Data & Analytics](#data--analytics)
+- [Extensions](#extensions)
 - [Frameworks & Libraries](#frameworks--libraries)
 - [Learning Resources](#learning-resources)
 - [Community Projects](#community-projects)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## Plugins & Extensions
+## OpenClaw Ecosystem
 
-> Standalone features that extend the OpenClaw runtime.
+Core projects and official resources:
 
-- [`OpentheClaw`](https://github.com/Jah-yee/OpentheClaw) — One-click SSH tunnel launcher with web-based config UI. Lightweight, zero external dependencies.
+- [OpenClaw](https://github.com/OpenClawHQ/openclaw) — The main TypeScript/Node.js runtime. Hands for AI that move first.
+- [ClawHub](https://clawhub.com) — Official skill registry with vector search, publish/install/sync capabilities.
+- [Lobster](https://github.com/OpenClawHQ/lobster) — Agent orchestration framework for multi-step workflows.
+- [ACPX](https://github.com/OpenClawHQ/acpx) — AI Composition Protocol for skill composition and chaining.
+- [plugin-template](https://github.com/OpenClawHQ/plugin-template) — Official template for creating new OpenClaw skills.
+- [skill-lint](https://github.com/OpenClawHQ/skill-lint) — Linter and validator for SKILL.md files before publishing.
 
-<!-- Add more plugins as the ecosystem grows -->
+---
 
-## Connectors & Adapters
+## Skills by Category
 
-> Bridge AI agents to external services, APIs, and data sources.
+Official and community-maintained skills, organized by use case. Install via: `openclaw plugins install <name>`
 
-*This section is growing. Have a connector to share? [Open a PR.](#contributing)*
+### Developer Tools
 
-<!-- Examples to add:
-- Database connectors (PostgreSQL, Redis, MongoDB)
-- API adapters (Slack, GitHub, Jira)
-- File system connectors
--->
+Skills for code, version control, and development workflows.
 
-## Developer Tools
+- **github** — Interact with GitHub repositories, issues, pull requests, and workflows. Automate code review, create releases, and manage CI/CD from within OpenClaw.
+- **git** — Advanced Git operations: branching, rebasing, cherry-picking, worktrees. Essential for complex version control workflows.
+- **git-worktree** — Dedicated skill for Git worktree management. Create and manage isolated branches for parallel development.
+- **docker-manager** — Build, run, and manage Docker containers and images. Push to registries and orchestrate containerized workloads.
+- **shell** — Execute shell commands and scripts. Useful for system operations, installations, and custom workflows.
 
-> CLIs, testing frameworks, and workflow automations for plugin developers.
+### Communication
 
-- [`plugin-template`](https://github.com/OpenClawHQ/plugin-template) — Official starter template for new OpenClaw plugins. Fork and build.
+Connect OpenClaw to messaging and collaboration platforms.
 
-<!-- Examples to add:
-- Plugin scaffolding CLI
-- Local development server
-- Plugin testing harness
--->
+- **slack** — Post messages, create threads, manage channels, and respond to events in Slack workspaces.
+- **discord** — Send messages and interact with Discord servers. Integrate OpenClaw agents into community servers.
+- **telegram** — Send and receive messages via Telegram bots. Build notification and command workflows.
+- **email** — Send emails, read inboxes, and manage attachments. Integrate email workflows into agent operations.
+
+### Productivity
+
+Tools for task management, scheduling, and information management.
+
+- **notion** — Read and write Notion databases, pages, and blocks. Sync OpenClaw workflows with Notion workspaces.
+- **notion-sync** — Specialized skill for syncing large Notion workspaces with OpenClaw data stores.
+- **calendar** — Create and manage calendar events. Schedule tasks, meetings, and reminders.
+- **todoist** — Manage Todoist projects and tasks. Integrate task creation and tracking into agents.
+- **airtable** — Interact with Airtable bases and records. Treat Airtable as a lightweight database for OpenClaw.
+
+### DevOps & Infrastructure
+
+Infrastructure automation, containerization, and CI/CD.
+
+- **kubernetes** — Deploy and manage Kubernetes clusters, namespaces, and workloads. Essential for cloud-native operations.
+- **terraform** — Infrastructure-as-code operations. Create, update, and destroy cloud resources via Terraform.
+- **aws** — AWS services integration. Launch EC2 instances, manage S3, RDS, Lambda, and more.
+- **docker-manager** — Container operations: build, push, run, and inspect Docker images and containers.
+- **postgres-query** — Execute SQL queries against PostgreSQL databases. Read and transform data.
+- **ci-cd** — Generic CI/CD skill for GitHub Actions, GitLab CI, Jenkins, and other platforms.
+
+### Data & Analytics
+
+Data processing, transformation, and analysis.
+
+- **postgres-query** — Execute SQL queries and transformations on PostgreSQL. ETL operations and data analysis.
+- **csv** — Parse, transform, and generate CSV files. Useful for data import/export workflows.
+- **json** — Transform, validate, and query JSON data. Schema validation and transformation.
+- **sql** — Multi-database SQL execution. Works with PostgreSQL, MySQL, SQLite, and more.
+- **datadog** — Query metrics and logs from Datadog. Integrate monitoring into OpenClaw agents.
+- **api-connector** — Generic HTTP client for REST APIs. Build custom integrations with any web service.
+
+---
+
+## Extensions
+
+Extensions are TypeScript npm packages that add new channels, providers, or runtime capabilities to OpenClaw.
+
+### Official Extensions
+
+- **@openclawHQ/slack-provider** — Slack integration for receiving events and commands.
+- **@openclawHQ/discord-provider** — Discord bot provider for multi-server deployments.
+- **@openclawHQ/telegram-provider** — Telegram bot provider for secure user access.
+- **@openclawHQ/http-server** — HTTP server extension for webhook ingestion and REST API exposure.
+
+### Community Extensions
+
+- [OpentheClaw](https://github.com/Jah-yee/OpentheClaw) — SSH tunnel launcher with web-based configuration UI. Zero external dependencies, production-ready.
+
+---
 
 ## Frameworks & Libraries
 
-> Libraries and frameworks useful for building proactive AI systems.
+Complementary frameworks and libraries that pair well with OpenClaw for agent development and orchestration.
 
-- [LangChain](https://github.com/langchain-ai/langchain) — Framework for developing applications powered by language models.
-- [CrewAI](https://github.com/crewAIInc/crewAI) — Framework for orchestrating role-playing AI agents.
-- [AutoGen](https://github.com/microsoft/autogen) — Multi-agent conversation framework by Microsoft.
-- [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Agent framework built on Pydantic for type-safe AI applications.
-- [MCP (Model Context Protocol)](https://github.com/modelcontextprotocol) — Open protocol for connecting AI models to external tools and data.
+- [LangChain](https://github.com/langchain-ai/langchain) — The most popular framework for building LLM applications. Integrates with OpenClaw for advanced chain compositions.
+- [CrewAI](https://github.com/crewAIInc/crewAI) — Multi-agent orchestration framework. Great for complex, multi-role agent workflows.
+- [AutoGen](https://github.com/microsoft/autogen) — Microsoft's multi-agent conversation framework. Native integration with OpenClaw skills.
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Type-safe AI agent framework built on Pydantic. Excellent for schema validation.
+- [MCP (Model Context Protocol)](https://github.com/modelcontextprotocol) — Open standard for connecting models to tools. Bridges OpenClaw and other AI systems.
+- [Anthropic SDK](https://github.com/anthropic-ai/anthropic-sdk-python) — Official Anthropic SDK for Claude API access.
+- [Vercel AI SDK](https://github.com/vercel-labs/ai) — TypeScript SDK for building AI applications. Lightweight alternative to LangChain.
+
+---
 
 ## Learning Resources
 
-> Guides, articles, and talks on proactive AI and plugin architecture.
+Official documentation, articles, tutorials, and talks on OpenClaw and proactive AI architecture.
 
-- [Anthropic: Building effective agents](https://www.anthropic.com/research/building-effective-agents) — Design patterns for AI agent systems.
-- [OpenAI: Function calling guide](https://platform.openai.com/docs/guides/function-calling) — How to connect LLMs to external tools.
-- [Model Context Protocol Spec](https://spec.modelcontextprotocol.io/) — The MCP specification for tool integration.
+### Official Documentation
 
-<!-- Add blog posts, talks, tutorials as they emerge -->
+- [OpenClaw Repository](https://github.com/OpenClawHQ/openclaw) — Main project documentation and examples.
+- [SKILL.md Specification](https://github.com/OpenClawHQ/openclaw/docs/SKILL.md) — Complete format specification for skill files.
+- [ClawHub Documentation](https://clawhub.com/docs) — Publishing, discovery, and skill management guide.
+
+### Articles & Research
+
+- [Anthropic: Building effective agents](https://www.anthropic.com/research/building-effective-agents) — Design patterns and best practices for AI agent systems.
+- [OpenAI: Function calling guide](https://platform.openai.com/docs/guides/function-calling) — How to connect language models to external tools.
+- [Model Context Protocol Spec](https://spec.modelcontextprotocol.io/) — Open standard for tool integration with AI models.
+
+### Community Tutorials
+
+- [Getting Started with OpenClaw](https://github.com/OpenClawHQ/openclaw/blob/main/docs/getting-started.md) — Quick start guide for new users.
+- [Creating Your First Skill](https://github.com/OpenClawHQ/openclaw/blob/main/docs/creating-skills.md) — Step-by-step skill development tutorial.
+- [Deploying OpenClaw Agents](https://github.com/OpenClawHQ/openclaw/blob/main/docs/deployment.md) — Production deployment patterns.
+
+---
 
 ## Community Projects
 
-> Projects built by the OpenClawHQ community. Experimental, in-progress, and everything in between.
+Projects and experiments built by the OpenClaw community. Ranging from production-ready to experimental. If you have a project to add, please open a PR!
 
-*Be the first to add yours. Open a PR.*
+*Be the first to add yours. See [Contributing](#contributing) for details.*
 
 ---
 
 ## Contributing
 
-To add a project to this list:
+To add a project or resource to this list:
+
+### Submission Guidelines
 
 1. **Fork** this repository.
-2. **Add your project** in the appropriate section. Use this format:
+2. **Add your entry** in the appropriate section using this format:
+   ```markdown
+   - **[project-name](https://github.com/user/project)** — One-sentence description of what it does and why it's valuable.
    ```
-   - [`project-name`](https://github.com/user/project) — One-line description of what it does.
-   ```
-3. **Open a Pull Request** with a brief explanation of why the project belongs here.
+3. **Keep descriptions concise** — 1-2 sentences max. Include context on why this belongs in the awesome list.
+4. **Open a Pull Request** with a title like "Add: project-name" and briefly explain the contribution.
 
-### Criteria for inclusion
+### Criteria for Inclusion
 
-- Project must be open source or source-available.
-- Must be relevant to OpenClaw, proactive AI, or plugin/agent infrastructure.
-- Should be functional (not just an empty repo or placeholder).
-- Self-promotion is fine — just be honest about the project's maturity.
+Projects should meet these standards:
 
-### Criteria for ordering
+- **Open source or source-available** — Code should be publicly accessible.
+- **Relevant to OpenClaw** — Directly integrates with or extends OpenClaw, or enables proactive AI development.
+- **Functional** — Not a stub or placeholder. Has demonstrable functionality.
+- **Maintained** — Active or recently updated. Projects in early stages are welcome with clear labeling.
+- **Quality code** — Well-structured, documented, and follows best practices.
 
-Projects within each section are listed chronologically (newest last). If a section grows large, we may reorganize by subcategory.
+Self-promotion is welcome and encouraged. Be honest about maturity level (alpha, beta, production-ready).
+
+### Ordering
+
+Within each section, entries are listed chronologically (newest last). Sections may reorganize by subcategory as they grow.
 
 ---
 
 ## License
 
-This list is licensed under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The projects linked here have their own licenses.
+This list is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). You are free to use and modify this list for any purpose without attribution.
+
+The projects, skills, and resources linked here retain their own licenses. Please review individual project licenses before use.
 
 ---
 
