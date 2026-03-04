@@ -35,7 +35,8 @@ Core projects and official resources:
 - [Lobster](https://github.com/OpenClawHQ/lobster) — Agent orchestration framework for multi-step workflows.
 - [ACPX](https://github.com/OpenClawHQ/acpx) — AI Composition Protocol for skill composition and chaining.
 - [plugin-template](https://github.com/OpenClawHQ/plugin-template) — Official template for creating new OpenClaw skills.
-- [skill-lint](https://github.com/OpenClawHQ/skill-lint) — Linter and validator for SKILL.md files before publishing.
+- [skill-lint](https://github.com/OpenClawHQ/skill-lint) — CLI linter for SKILL.md files. Catches errors before `clawhub publish`.
+- [skill-lint-action](https://github.com/OpenClawHQ/skill-lint-action) — GitHub Action wrapping skill-lint. Inline PR annotations, job summaries, zero config. Add to any skill repo in one step.
 
 ---
 
