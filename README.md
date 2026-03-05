@@ -30,10 +30,10 @@ A curated list of high-quality resources, skills, extensions, and tools for the 
 
 Core projects and official resources:
 
-- [OpenClaw](https://github.com/OpenClawHQ/openclaw) — The main TypeScript/Node.js runtime. Hands for AI that move first.
+- [OpenClaw](https://github.com/openclaw/openclaw) — The main TypeScript/Node.js runtime. Hands for AI that move first.
 - [ClawHub](https://clawhub.com) — Official skill registry with vector search, publish/install/sync capabilities.
-- [Lobster](https://github.com/OpenClawHQ/lobster) — Agent orchestration framework for multi-step workflows.
-- [ACPX](https://github.com/OpenClawHQ/acpx) — AI Composition Protocol for skill composition and chaining.
+- [Lobster](https://github.com/openclaw/lobster) — Workflow orchestration for OpenClaw. Run multi-step, Lobster-compatible pipelines; deterministic and resumable.
+- [ACPX](https://github.com/openclaw/acpx) — Agent Client Protocol CLI. Headless client for stateful ACP sessions over stdio; scriptable and automation-friendly.
 - [plugin-template](https://github.com/OpenClawHQ/plugin-template) — Official template for creating new OpenClaw skills.
 - [skill-lint](https://github.com/OpenClawHQ/skill-lint) — CLI linter for SKILL.md files. Catches errors before `clawhub publish`.
 - [skill-lint-action](https://github.com/OpenClawHQ/skill-lint-action) — GitHub Action wrapping skill-lint. Inline PR annotations, job summaries, zero config. Add to any skill repo in one step.
@@ -134,8 +134,8 @@ Official documentation, articles, tutorials, and talks on OpenClaw and proactive
 
 ### Official Documentation
 
-- [OpenClaw Repository](https://github.com/OpenClawHQ/openclaw) — Main project documentation and examples.
-- [SKILL.md Specification](https://github.com/OpenClawHQ/openclaw/docs/SKILL.md) — Complete format specification for skill files.
+- [OpenClaw Repository](https://github.com/openclaw/openclaw) — Main project documentation and examples.
+- [SKILL.md Specification](https://github.com/openclaw/openclaw/docs/SKILL.md) — Complete format specification for skill files.
 - [ClawHub Documentation](https://clawhub.com/docs) — Publishing, discovery, and skill management guide.
 
 ### Articles & Research
@@ -146,9 +146,9 @@ Official documentation, articles, tutorials, and talks on OpenClaw and proactive
 
 ### Community Tutorials
 
-- [Getting Started with OpenClaw](https://github.com/OpenClawHQ/openclaw/blob/main/docs/getting-started.md) — Quick start guide for new users.
-- [Creating Your First Skill](https://github.com/OpenClawHQ/openclaw/blob/main/docs/creating-skills.md) — Step-by-step skill development tutorial.
-- [Deploying OpenClaw Agents](https://github.com/OpenClawHQ/openclaw/blob/main/docs/deployment.md) — Production deployment patterns.
+- [Getting Started with OpenClaw](https://github.com/openclaw/openclaw/blob/main/docs/getting-started.md) — Quick start guide for new users.
+- [Creating Your First Skill](https://github.com/openclaw/openclaw/blob/main/docs/creating-skills.md) — Step-by-step skill development tutorial.
+- [Deploying OpenClaw Agents](https://github.com/openclaw/openclaw/blob/main/docs/deployment.md) — Production deployment patterns.
 
 ---
 
