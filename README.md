@@ -1,5 +1,7 @@
 # Awesome OpenClaw
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![CC0](https://img.shields.io/badge/license-CC0%201.0-lightgray.svg)](https://creativecommons.org/publicdomain/zero/1.0/) [![Skills](https://img.shields.io/badge/3286%2B%20skills-on%20ClawHub-E03E3E)](https://clawhub.com)
+
 A curated list of high-quality resources, skills, extensions, and tools for the OpenClaw ecosystem and proactive AI development.
 
 **What is this?** An editorial guide to the best OpenClaw skills and complementary technologies. While [ClawHub](https://clawhub.com) is the machine-searchable registry where skills are published and discovered, this list highlights curated recommendations, organized by use case, with context on why each project is valuable.
