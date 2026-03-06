@@ -32,13 +32,13 @@ A curated list of high-quality resources, skills, extensions, and tools for the 
 
 Core projects and official resources:
 
-- [OpenClaw](https://github.com/OpenClawHQ/openclaw) — The main TypeScript/Node.js runtime. Hands for AI that move first.
+- [OpenClaw](https://github.com/openclaw/openclaw) — The main TypeScript/Node.js runtime. Hands for AI that move first.
 - [ClawHub](https://clawhub.com) — Official skill registry with vector search, publish/install/sync capabilities.
-- [Lobster](https://github.com/OpenClawHQ/lobster) — Agent orchestration framework for multi-step workflows.
-- [ACPX](https://github.com/OpenClawHQ/acpx) — AI Composition Protocol for skill composition and chaining.
-- [plugin-template](https://github.com/OpenClawHQ/plugin-template) — Official template for creating new OpenClaw skills.
-- [skill-lint](https://github.com/OpenClawHQ/skill-lint) — CLI linter for SKILL.md files. Catches errors before `clawhub publish`.
-- [skill-lint-action](https://github.com/OpenClawHQ/skill-lint-action) — GitHub Action wrapping skill-lint. Inline PR annotations, job summaries, zero config. Add to any skill repo in one step.
+- [Lobster](https://github.com/effectorHQ/lobster) — Agent orchestration framework for multi-step workflows.
+- [ACPX](https://github.com/effectorHQ/acpx) — AI Composition Protocol for skill composition and chaining.
+- [plugin-template](https://github.com/effectorHQ/plugin-template) — Official template for creating new OpenClaw skills.
+- [skill-lint](https://github.com/effectorHQ/skill-lint) — CLI linter for SKILL.md files. Catches errors before `clawhub publish`.
+- [skill-lint-action](https://github.com/effectorHQ/skill-lint-action) — GitHub Action wrapping skill-lint. Inline PR annotations, job summaries, zero config. Add to any skill repo in one step.
 
 ---
 
@@ -105,10 +105,10 @@ Extensions are TypeScript npm packages that add new channels, providers, or runt
 
 ### Official Extensions
 
-- **@openclawHQ/slack-provider** — Slack integration for receiving events and commands.
-- **@openclawHQ/discord-provider** — Discord bot provider for multi-server deployments.
-- **@openclawHQ/telegram-provider** — Telegram bot provider for secure user access.
-- **@openclawHQ/http-server** — HTTP server extension for webhook ingestion and REST API exposure.
+- **@effectorhq/slack-provider** — Slack integration for receiving events and commands.
+- **@effectorhq/discord-provider** — Discord bot provider for multi-server deployments.
+- **@effectorhq/telegram-provider** — Telegram bot provider for secure user access.
+- **@effectorhq/http-server** — HTTP server extension for webhook ingestion and REST API exposure.
 
 ### Community Extensions
 
@@ -136,8 +136,8 @@ Official documentation, articles, tutorials, and talks on OpenClaw and proactive
 
 ### Official Documentation
 
-- [OpenClaw Repository](https://github.com/OpenClawHQ/openclaw) — Main project documentation and examples.
-- [SKILL.md Specification](https://github.com/OpenClawHQ/openclaw/docs/SKILL.md) — Complete format specification for skill files.
+- [OpenClaw Repository](https://github.com/openclaw/openclaw) — Main project documentation and examples.
+- [SKILL.md Specification](https://github.com/openclaw/openclaw/docs/SKILL.md) — Complete format specification for skill files.
 - [ClawHub Documentation](https://clawhub.com/docs) — Publishing, discovery, and skill management guide.
 
 ### Articles & Research
@@ -148,15 +148,15 @@ Official documentation, articles, tutorials, and talks on OpenClaw and proactive
 
 ### Community Tutorials
 
-- [Getting Started with OpenClaw](https://github.com/OpenClawHQ/openclaw/blob/main/docs/getting-started.md) — Quick start guide for new users.
-- [Creating Your First Skill](https://github.com/OpenClawHQ/openclaw/blob/main/docs/creating-skills.md) — Step-by-step skill development tutorial.
-- [Deploying OpenClaw Agents](https://github.com/OpenClawHQ/openclaw/blob/main/docs/deployment.md) — Production deployment patterns.
+- [Getting Started with OpenClaw](https://github.com/openclaw/openclaw/blob/main/docs/getting-started.md) — Quick start guide for new users.
+- [Creating Your First Skill](https://github.com/openclaw/openclaw/blob/main/docs/creating-skills.md) — Step-by-step skill development tutorial.
+- [Deploying OpenClaw Agents](https://github.com/openclaw/openclaw/blob/main/docs/deployment.md) — Production deployment patterns.
 
 ---
 
 ## Community Projects
 
-Projects and experiments built by the OpenClaw community. Ranging from production-ready to experimental. If you have a project to add, please open a PR!
+Projects and experiments built by the effectorHQ community. Ranging from production-ready to experimental. If you have a project to add, please open a PR!
 
 *Be the first to add yours. See [Contributing](#contributing) for details.*
 
@@ -202,4 +202,4 @@ The projects, skills, and resources linked here retain their own licenses. Pleas
 
 ---
 
-<sub>Curated by [OpenClawHQ](https://github.com/OpenClawHQ). Every claw extends the reach.</sub>
+<sub>Curated by [effectorHQ](https://github.com/effectorHQ). Every effector extends the reach.</sub>
